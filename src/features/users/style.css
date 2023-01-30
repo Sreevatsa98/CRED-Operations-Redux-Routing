@@ -1,0 +1,36 @@
+.head {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.uname {
+    font-weight: 700;
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.email{
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.tabs{
+    display: grid;
+    gap: 1.25rem/* 20px */;
+    @media (min-width: 768px) {
+        .md\:grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+}
+
+.nouser{
+    text-align: center;
+    grid-column: span 2 / span 2;
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity));
+    font-weight: 600;
+}
