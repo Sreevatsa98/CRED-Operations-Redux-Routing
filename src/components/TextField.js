@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function TextField( { label, inputProps, onChange, value } ) {
     return (
@@ -14,4 +14,4 @@ function TextField( { label, inputProps, onChange, value } ) {
     )
 }
 
-export default TextField
+export default TextField;

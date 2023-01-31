@@ -1,4 +1,4 @@
-// import './style.css'; 
+import './style.css';
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Button from "../../components/button";
@@ -12,28 +12,17 @@ const UserList = () => {
     const handleRemoveUser = (id) => {
         dispatch(deleteUser({ id }));
     }
-    // console.log(users);
-    
-    // const users = [
-    //     { id: '1', name:'Sam', email:'sam@gmail.com' },
-    //     { id: '2', name:'Anna', email:'anna@gmail.com' }
-    // ];
 
 const renderCard = () => users.map(user => (
     
     <div className="bg-gray-300 p-5 flex items-center justify-between" key={user.id}>
-    {/* <div class="head"> */}
         <div>
-            <h3 className="font-bold text-lg text-gray-700">{user.name}</h3>
-            {/* <h3 class="uname">{user.name}</h3> */}
+            <h3 className="font-bold text-lg text-black">{user.name}</h3>
 
-            <span className="font-normal text-gray-600">{user.email}</span>
-            {/* <span class="email">{user.email}</span> */}
+            <span className="font-normal text-black">{user.email}</span>
         </div>
 
         <div className="flex gap-4">
-
-            {/* <Link to=`edit-user/${user.id}`> */}
 
             <Link to={`edit-user/${user.id}`}>
                 <button>

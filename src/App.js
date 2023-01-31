@@ -6,8 +6,8 @@ import UserList from './features/users/UserList';
 
 function App() {
   return (
-    <div className="container mx-auto px-2 max-w-5xl pt-10 md:pt-32">
-      <h1 className="text-center font-bold text-2xl text-gray-700">
+    <div className= "container mx-auto px-2 max-w-5xl pt-10 md:pt-25">
+      <h1 className="text-center font-bold text-2xl text-white">
         CRED with Redux
       </h1>
       <Routes>
@@ -15,8 +15,6 @@ function App() {
         <Route path="/add-user" element={<AddUser />}/>
         <Route path="/edit-user/:id" element={<EditUser />}/>
       </Routes>
-      {/* <UserList /> */}
-      {/* <h1 className="text-3x1 font-bold underline">hey</h1> */}
     </div>
   );
 }

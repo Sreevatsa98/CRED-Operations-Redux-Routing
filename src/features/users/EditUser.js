@@ -1,10 +1,10 @@
-// import React from 'react'
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import Button from '../../components/button';
 import TextField from '../../components/TextField';
 import { editUser } from './UserSlice';
+import './styleEdit.css';
 
 const EditUser = () => {
 
@@ -31,7 +31,8 @@ const EditUser = () => {
 
     return (
         <div className="mt-10 max-w-xl mx-auto">
-            <TextField 
+            <TextField
+                className ="text-white"
                 label="Name"
                 value={values.name}
                 onChange={(e) => setValues({ ...values, name: e.target.value })}
